@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+      <p id="p">Hello'
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam expedita eveniet numquam sunt explicabo animi. Natus adipisci veniam suscipit quod voluptatum provident minima aperiam sapiente dignissimos, reiciendis soluta amet ipsam nemo corporis. Dicta commodi unde ducimus corrupti odit excepturi earum.
+      </p>
+    <button id="btnhide">Hide</button>
+
+    <button id="btnshow">show</button>
+
+    <button id="button">show/hide</button>
+
+    <button id="btnfadeIn">Fade In</button>
+
+    <button id="btnfadeOut">Fade out</button>
+
+    <button id="btnfadetoggle">Fade In/Out</button>
+
+    <button id="btnfadeTO">Fade To</button>
+
+    <button id="btnslideUp">Slide up</button>
+
+    <button id="btnslideDown">Slide Down</button>
+
+    <button id="btntoggle">Slide Up/Down</button>
+
+    
+<script>
+    $(document).ready(function(){
+       $("#btnhide").click(function(){
+        $("#p").hide()
+       })
+
+        $("#btnshow").click(function(){
+            $("#p").show()
+        })
+
+        $("#button").click(function(){
+        $("#p").toggle();
+       });
+
+        $("#btnfadeIn").click(function(){
+        $("#p").fadeIn(3000);
+       });
+
+        $("#btnfadeOut").click(function(){
+        $("#p").fadeOut(3000);
+       });
+
+        $("#btnfadetoggle").click(function(){
+        $("#p").fadeToggle(3000);
+       });
+
+        $("#btnfadeTo").click(function(){
+        $("#p").fadeTo("slow", 0.4);
+       });
+
+        $("#btnslideUp").click(function(){
+        $("#p").slideUp(3000);
+       });
+
+        $("#btnslideDown").click(function(){
+        $("#p").slideDown(3000);
+       });
+
+        $("#btntoggle").click(function(){
+        $("#p").slideToggle(3000);
+       });
+
+    })
+</script>
+
+
+</body>
+</html>
